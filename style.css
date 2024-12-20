@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -10;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/fondo/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+}
+
+.contenedor {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor img {
+    width: 150px;
+}
+
+.contenedor h1 {
+    font-size: 5rem;
+    font-family: 'Shadows Into Light Two';
+}
